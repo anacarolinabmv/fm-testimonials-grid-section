@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.container {
+  display: grid;
+  width: 110rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.card {
+  padding: 2.6rem 3.2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2rem 3rem rgb(51, 51, 51, 0.15);
+}
+.card--1 {
+  grid-row: 1;
+  grid-column: 1 / span 2;
+}
+.card--2 {
+  grid-row: 1;
+  grid-column: 3 / span 1;
+}
+.card--3 {
+  grid-row: 2;
+  grid-column: 1;
+}
+.card--4 {
+  grid-row: 2;
+  grid-column: 2 / span 2;
+}
+.card--5 {
+  grid-row: 1 / span 2;
+  grid-column: 4;
+}
+
+.card__person {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+.person__picture {
+  border-radius: 50%;
+  height: 2.8rem;
+  width: 2.8rem;
+  border: 2px solid #fff;
+}
+.bg--purple .person__picture {
+  border-color: #a775f1;
+}
+.bg--dark-grey .person__picture {
+  border-color: #733fc8;
+}
+
+.person__name {
+  line-height: 1.3rem;
+}
+.person__verified {
+  font-size: 1.1rem;
+  opacity: 0.5;
+  margin-top: 0.2rem;
+}
+.card__heading {
+  line-height: normal;
+  margin: 1.6rem 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.card__testimonial {
+  opacity: 0.7;
+  line-height: 1.8rem;
+}
+.bg--white {
+  background-color: #fff;
+  color: hsl(217, 19%, 35%);
+}
+.bg--purple {
+  background-color: hsl(263, 55%, 52%);
+  color: #fff;
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: right 10rem top;
+}
+.bg--light-grey {
+  background-color: hsl(217, 19%, 35%);
+  color: #fff;
+}
+.bg--dark-grey {
+  background-color: hsl(219, 29%, 14%);
+  color: #fff;
+}
