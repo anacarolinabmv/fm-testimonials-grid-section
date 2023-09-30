@@ -22,12 +22,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](images/screenshots/screenshot_desktop.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Testimonials Grid ](https://fm-testimonialsgrid.netlify.app/)
 
 ## My process
 
